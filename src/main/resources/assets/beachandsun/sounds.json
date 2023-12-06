@@ -1,0 +1,20 @@
+{
+  "vodka_finish_drink":{
+    "subtitle": "Vodka bottle being drink",
+    "sounds": [
+      "beachandsun:vodka_finish_drink"
+    ]
+  },
+  "lc_shop_song":{
+    "subtitle": "Tururururu",
+    "sounds": [
+      "beachandsun:lc_shop_song"
+    ]
+  },
+  "quick_revive_sound":{
+    "subtitle": "If you wanna get up. You need a little revive!",
+    "sounds": [
+      "beachandsun:quick_revive_sound"
+    ]
+  }
+}
