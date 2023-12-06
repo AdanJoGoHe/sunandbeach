@@ -6,17 +6,7 @@ import static com.serex.beachandsun.items.GreenChurroSword.GREEN_CHURRO_SWORD_MA
 import static com.serex.beachandsun.items.MiracleSword.MIRACLE_SWORD_MATERIAL;
 import static com.serex.beachandsun.items.WoodenMace.WOODEN_MACE_MATERIAL;
 
-import com.serex.beachandsun.items.BlueChurroSword;
-import com.serex.beachandsun.items.GofioBagItem;
-import com.serex.beachandsun.items.GreenChurroSword;
-import com.serex.beachandsun.items.HoneyRumItem;
-import com.serex.beachandsun.items.MalibuItem;
-import com.serex.beachandsun.items.MiracleSword;
-import com.serex.beachandsun.items.ReusablePotionItem;
-import com.serex.beachandsun.items.TirmaItem;
-import com.serex.beachandsun.items.TropicalCanItem;
-import com.serex.beachandsun.items.VodkaItem;
-import com.serex.beachandsun.items.WoodenMace;
+import com.serex.beachandsun.items.*;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -33,6 +23,7 @@ public class ItemInit {
   public static final Item GOFIO_BAG = registerItem("gofio_bag", new GofioBagItem(new FabricItemSettings()));
   public static final Item VODKA = registerItem("vodka", new VodkaItem(new FabricItemSettings()));
   public static final Item MALIBU = registerItem("malibu", new MalibuItem(new FabricItemSettings()));
+  public static final Item JUGGERNOG_DRINK = registerItem("juggernog_drink", new JuggernogDrinkItem(new FabricItemSettings()));
   public static final Item REUSABLE_POTION = registerItem("reusable_potion", new ReusablePotionItem(new FabricItemSettings()));
   public static final Item HONEY_RUM = registerItem("honey_rum", new HoneyRumItem(new FabricItemSettings()));
   public static final Item MIRACLE_SWORD =  registerItem("miracle_sword", new MiracleSword(MIRACLE_SWORD_MATERIAL, 25, (float) -1.8 , new Item.Settings()));
@@ -54,6 +45,7 @@ public class ItemInit {
     entries.add(BLUE_CHURRO);
     entries.add(HONEY_RUM);
     entries.add(REUSABLE_POTION);
+    entries.add(JUGGERNOG_DRINK);
   }
 
   private static Item registerItem(String name, Item item)  {
