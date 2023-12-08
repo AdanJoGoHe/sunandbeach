@@ -31,6 +31,7 @@ public class ItemInit {
   public static final Item GREEN_CHURRO =  registerItem("green_churro", new GreenChurroSword(GREEN_CHURRO_SWORD_MATERIAL, 3, (float) -1.8 , new Item.Settings()));
   public static final Item BLUE_CHURRO =  registerItem("blue_churro", new BlueChurroSword(BLUE_CHURRO_SWORD_MATERIAL, 3, (float) -1.8 , new Item.Settings()));
 
+  public static final Item CANDELABRO = registerItem("candelabro", new Candelabro(new FabricItemSettings()));
 
   private static void addItemsToMiscItemGroup(FabricItemGroupEntries entries){
     entries.add(TROPICAL_CAN);
@@ -45,7 +46,7 @@ public class ItemInit {
     entries.add(BLUE_CHURRO);
     entries.add(HONEY_RUM);
     entries.add(REUSABLE_POTION);
-    entries.add(JUGGERNOG_DRINK);
+    entries.add(CANDELABRO);
   }
 
   private static Item registerItem(String name, Item item)  {
