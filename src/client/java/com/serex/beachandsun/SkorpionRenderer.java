@@ -22,8 +22,9 @@ public class SkorpionRenderer extends GeoEntityRenderer<SkorpionEntity> {
   @Override
   public void render(SkorpionEntity entity, float entityYaw, float partialTick,
                      MatrixStack poseStack, VertexConsumerProvider bufferSource, int packedLight) {
+    poseStack.scale(2.5f,2.5f,2.5f);
     if(entity.isBaby()){
-      poseStack.scale(0.4f,0.4f, 0.4f);
+      poseStack.scale(1f,1f, 1f);
     }
     super.render(entity, entityYaw, partialTick, poseStack, bufferSource, packedLight);
   }

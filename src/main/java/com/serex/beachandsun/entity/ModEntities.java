@@ -21,7 +21,7 @@ public class ModEntities {
 
   public static final EntityType<SkorpionEntity> SKORPION = registerItem("skorpion",
       FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, SkorpionEntity::new)
-          .dimensions(EntityDimensions.fixed(0.75F, 0.45F)).build());
+          .dimensions(EntityDimensions.fixed(1.9F, 1.6F)).build());
 
   private static <E extends Entity> EntityType<E> registerItem(String name, EntityType<E> item)  {
     return Registry.register(Registries.ENTITY_TYPE, new Identifier(MODIDEF, name), item);
